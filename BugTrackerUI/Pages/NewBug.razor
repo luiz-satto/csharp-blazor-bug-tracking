@@ -16,7 +16,7 @@
     public Bug AddBug { get; set; } = new Bug();
     protected void HandleValidSubmit()
     {
-        this.BugService.AddBug(this.AddBug);
-        this.NavService.NavigateTo("");
+        BugService.AddBug(AddBug);
+        NavService.NavigateTo("");
     }
 }
